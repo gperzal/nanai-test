@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../../assets/css/TestPage.css';
 
@@ -11,6 +11,10 @@ const TestPage = () => {
   });
   const [showModal, setShowModal] = useState(false);
   const [recommendedKit, setRecommendedKit] = useState(null);
+
+
+
+
 
   const questions = {
     mood: {
@@ -111,6 +115,10 @@ const TestPage = () => {
       minimumFractionDigits: 0
     }).format(price);
   };
+
+
+
+  
 
   return (
     <div className="test-page">
